@@ -59,6 +59,7 @@
 </head>
 
 <body id="top">
+
   <div id="alert">
     <a class="alert" href="spring.html" target="_blank">Spring Week calendar is out! Check it here!</a>
   </div>
@@ -125,7 +126,7 @@
 
   <!-- home
     ================================================== -->
-  <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+  <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/people/group-EUTIC-crop.jpeg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
     <div class="overlay"></div>
     <div class="shadow-overlay"></div>
@@ -539,6 +540,16 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="https://cdn.rawgit.com/mikeflynn/egg.js/master/egg.min.js"></script>
+    <script>
+      var egg = new Egg();
+      egg
+        .addCode("up,up,down,down,left,right,left,right", function() {
+        })
+        .addHook(function(){
+          console.log("Hook called for: " + this.activeEgg.keys);
+        }).listen();
+    </script>
 
     <!-- Java Script
     ================================================== -->
