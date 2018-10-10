@@ -993,7 +993,8 @@
     -ms-touch-action: pan-y;
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
-    margin-top: 40px;
+    margin-top: 40px auto;
+
 }
 
 .slick-list {
